@@ -1,0 +1,22 @@
+<body>
+
+  <div class="container-answer">
+    <ng-container *ngFor="let questionAnswer of questionAnswerList.slice(0)">
+      <p *ngIf="questionAnswer.role === 'user'" class="dt"><strong>Pergunta:</strong> {{ questionAnswer.content }}</p>
+      <p *ngIf="questionAnswer.role === 'assistant'" class="dd"><strong>Resposta:</strong> {{ questionAnswer.content }}
+      </p>
+    </ng-container>
+  </div>
+
+  <div class="container-question">
+    <label for="pergunta"> Pergunta :</label>
+    <textarea cols="100" rows="1" id="pergunta" [(ngModel)]="questionText"></textarea>
+    <button type="button" class="btn btn-primary" (click)="sendQuestion()"
+      style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+      Enviar
+    </button>
+    <span *ngIf="isloading" id="loading"> Aguarde, conectando...</span>
+    <span *ngIf="errorText" id="error"> Ocorreu um erro!!</span>
+  </div>
+
+</body>
