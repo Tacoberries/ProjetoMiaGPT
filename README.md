@@ -1,14 +1,6 @@
-# Alunos Involvidos
-
-- Lidyce Amanda - 01550458
-- Larissa Andrade - 01564988
-- Thiago Paulo - 01529069
-- Matheus José - 01521951
-- Joao Valadares - 01499788
-
 # MiaGPT
 
-Build simples da Mia usando a API do ChatGPT. Esse site consiste de 4 telas: "Quem Somos", "Nossos serviços", "Contatos" e "I.A".
+Build simples de um site usando a API do ChatGPT. Esse site consiste de 4 telas: "Quem Somos", "Nossos serviços", "Contatos" e "I.A".
 
 ## Começando:
 
